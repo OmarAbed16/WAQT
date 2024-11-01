@@ -120,7 +120,7 @@ public function getLineChartData() {
         'labels' => ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         'datasets' => [
             [
-                'label' => 'Mobile apps',
+                'label' => 'Total Sales',
                 'data' =>  $monthlySales,
                 'borderColor' => '#cb0c9f',
                 'tension' => 0.4,
