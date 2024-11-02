@@ -142,7 +142,7 @@ $avg = $statt->fetch(PDO::FETCH_ASSOC);
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner bg-light">
                         <?php echo "
-                            <img class='m-auto' src='{$watches['watch_img']}' alt='{$watches['watch_name']}' style='max-width: 100%; height: auto;'>
+                            <img class='m-auto' src='../../Project/dashboards/assets/products_img/{$watches['watch_img']}' alt='{$watches['watch_name']}' style='max-width: 100%; height: auto;'>
                             "; ?>
 
                     </div>
@@ -308,7 +308,7 @@ $avg = $statt->fetch(PDO::FETCH_ASSOC);
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="<?php echo $item['watch_img']; ?>" alt="<?php echo $item['watch_name']; ?>">
+                                <img class="img-fluid w-100 h-100" src="../../Project/dashboards/assets/products_img/<?php echo $item['watch_img']; ?>" alt="<?php echo $item['watch_name']; ?>">
                                 <div class="product-action">
 
                                     <a onclick="add_cart(<?= htmlspecialchars($item['watch_id']) ?>);" class="btn btn-outline-dark btn-square add-to-cart" data-id="<?= htmlspecialchars($item['watch_id']) ?>">

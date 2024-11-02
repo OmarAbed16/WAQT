@@ -176,7 +176,7 @@ $brands = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="<?php echo $item['watch_img']; ?>" alt="<?php echo $item['watch_description']; ?>">
+                                <img class="img-fluid w-100" src="../../Project/dashboards/assets/products_img/<?php echo $item['watch_img']; ?>" alt="<?php echo $item['watch_description']; ?>">
                                 <div class="product-action">
 
 
@@ -226,7 +226,7 @@ $brands = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="<?php echo $product['watch_img']; ?>" alt="<?php echo $product['watch_name']; ?>">
+                                <img class="img-fluid w-100" src="../../Project/dashboards/assets/products_img/<?php echo $product['watch_img']; ?>" alt="<?php echo $product['watch_name']; ?>">
                                 <div class="product-action">
 
 
