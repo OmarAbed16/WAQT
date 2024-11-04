@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showLineButton.addEventListener("click", () => {
     Showing = 1;
+
+    applyFilters();
   });
 
   if (allCategoryCheckbox.checked) {
@@ -68,13 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedMaterials = Array.from(
       document.querySelectorAll('input[name="material[]"]:checked')
     ).map((cb) => cb.value);
-
+    const search = document.getElementById("search_result");
     const queryString = new URLSearchParams({
       priceRange: price,
       categories: selectedCategories.join(","),
       brands: selectedBrands.join(","),
       materials: selectedMaterials.join(","),
       view: Showing,
+      searchs: search.value,
     }).toString();
 
     fetch("./controllers/filterResultsController.php?" + queryString)

@@ -31,7 +31,7 @@ if (isset($_POST['review'])) {
         $id = $_SESSION['watch_id'];
         $rating = $_POST['rating'];
         $comment = $_POST['comment'];
-        $email = $_POST['email'];
+        
 
         $query = "INSERT INTO `reviews` (`user_email`, `watch_id`, `rating`, `review_text`)
           SELECT `user_email`, :watch_id, :rating, :review_text 
@@ -349,7 +349,7 @@ $avg = $statt->fetch(PDO::FETCH_ASSOC);
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-primary bg-danger text-white btn-minus back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
